@@ -1,0 +1,13 @@
+chrome.app.runtime.onLaunched.addListener(function() {
+  chrome.app.window.create('klondike.html', {
+    id: "bmiCalc",
+    bounds: {
+      width: 500,
+      height: 700
+    },
+    maxWidth: 500,
+    minWidth: 500,
+    minHeight: 700,
+    maxHeight: 700,
+  });
+});
